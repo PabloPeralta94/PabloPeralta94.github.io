@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Curriculum Web Ticmas</title>
+    <link rel="stylesheet" href="estilo.css">    
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Zachary</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>                   
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>ZACHARY HENDERSON</h1>
+            <h2>Desarrollador PHP</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.skype.com/es/" target="_blank"><i class="fa-brands fa-skype"></i></a>
+                <a href="https://ar.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Zachary Henderson.</span> Soy alegre, me gusta la programación en PHP & Java Front End Developer. Me gusta conocer gente, trabajar en equipo. Me gustan los retos y aprender de ellos! Aprender de todos y adquirir nuevos conocimientos!. Mi objetivo principal es contribuir en el desarrollo de aplicaciones, implementando nuevas tecnologías y mejorando las ya existentes.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            11/1/1984
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            (454) 849-4088
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            zachary.henderson@example.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.zachary.henderson.com.ar
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            7247 Smokey Ln
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Desarrollador PHP</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes link" >
+                            <i class="fa-solid fa-gamepad"></i>                            
+                            <span>JUEGOS</span>
+                            <div class="hover-reveal image01">
+                            <img class="hidden-img" src="img\videojuegos.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="interes link">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                            <div class="hover-reveal image01">
+                                <img class="hidden-img" src="img\musica.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="interes link">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                            <div class="hover-reveal image01">
+                                <img class="hidden-img" src="img\viajar.jpg" alt="">
+                                </div>
+                        </div>
+                        <div class="interes link">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                            <div class="hover-reveal image01">
+                                <img class="hidden-img" src="img\Apple.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="interes link">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                            <div class="hover-reveal image01">
+                                <img class="hidden-img" src="img\deportes.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="interes link">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                            <div class="hover-reveal image01">
+                                <img class="hidden-img" src="img\book.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="interes link">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                            <div class="hover-reveal image01">
+                                <img class="hidden-img" src="img\cars.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="interes link">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                            <div class="hover-reveal image01">
+                                <img class="hidden-img" src="img\fotografo.jpg" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button class="botonEstilo" id="botonCv">Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades tecnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JAVA</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Android</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SqlServer</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Informatica</h4>
+                        <span class="casa">Preparatoria</span>
+                        <span class="fecha">2004 - 2007</span>
+                        <p>Colegio de Estudios Científicos y Tecnológicos del Estado de Hidalgo 09 Preparatoria publica con validez oficial. Área informática</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Informatica</h4>
+                        <span class="casa">Universidad</span>
+                        <span class="fecha">2007 - 2009</span>
+                        <p>Universidad Tecnológica de la Huasteca Hidalguense Titulo y cedula profesional de Técnico Superior Universitario. Área sistemas
+                            informáticos</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Desarrollador PHP</h4>
+                        <span class="casa">Infotec</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>Desarrollador PHP, usando como lenguaje php puro. Dando soporte a sistema ya existente y creación de nuevos módulos. Usando tecnologías ajax, jquery, json, xml, facturación electrónica, pagos, reportes contables. Exportación e importación de información. Motor de base de datos en mysql. Trabajo totalmente remoto.
+                            </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollador PHP</h4>
+                        <span class="casa">América Movil Telcel</span>
+                        <span class="fecha">2017 - 2019</span>
+                        <p>Desarrollador php. Generación de reportes excel, pdf, word. Usando tecnologías ajax, json, javascript, nodejs, angular, html5.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrolador Front-end</h4>
+                        <span class="casa">ClaroShop.com</span>
+                        <span class="fecha">2010 - 2016</span>
+                        <p>Desarrollo de nueva versión de decompras.com a claroshop.com implementando nuevas tecnologías de desarrollo y programación. Uso de buenas practicas de programación como PSR4, uso de motor de plantillas TWIG, programación orientada a objetos. Participando en el desarrollo de subastas, tanto en front-end y backend, así como el desarrollo de modulo en CMS.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form id="form" action="" class="form">
+                        <h3 class="tag"><span>Contactame</span></h3>
+                        <label for="name">Nombre Completo <span>*</span></label>
+                        <input name="name" required type="text" id="name" placeholder="Juan">
+                        <label for="asunto">Asunto<span>*</span></label>
+                        <input name="asunto" type="text" id="asunto" required placeholder="Quiero contactarte">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+                        <button type="submit" class="botonEstilo">enviar mensaje<i class="fa-solid fa-paper-plane"></i></button>
+                      </form>
+                      <a href="mailto:zachary.henderson@example.com" id="enviarMail"></a>                    
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                7247 Smokey Ln
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Contactame: (454) 849-4088
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: zachary.henderson@example.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- zachary.henderson@example.com
+11/1/1966 cumpleaños
+direccion 7247 Smokey Ln
+telefono (454) 849-4088
+-->
